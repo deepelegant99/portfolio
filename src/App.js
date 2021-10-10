@@ -3,11 +3,11 @@ import Header from "./components/Header";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
-import About from "./pages/About";
 import { useEffect } from "react";
 import PageNotFound from "./pages/PageNotFound";
 import LuckyNumber from "./pages/LuckyNumber";
 import { useState } from "react";
+import Projects from "./pages/Projects";
 function App() {
 
   useEffect(() => {
@@ -25,8 +25,8 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/about">
-          <About />
+        <Route path="/projects">
+          <Projects />
         </Route>
         <Route path="/profile">
           <Profile login={login} />

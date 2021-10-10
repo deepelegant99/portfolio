@@ -11,7 +11,7 @@ const Header = ({login, setLogin}) => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
           <Link to="profile">Profile</Link>
