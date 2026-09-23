@@ -1,0 +1,28 @@
+{
+  "schema_version": "website-os/v0.1",
+  "site": {
+    "name": "Automation Portfolio — Reference GitHub/Astro/Cloudflare Site",
+    "control_plane": "Notion Website OS",
+    "site_manifest": "https://app.notion.com/p/3e42a602b2fc81a4b951d2c01eeea7f0",
+    "runtime_target": "Cloudflare Workers",
+    "framework_intent": "Astro",
+    "repository": "deepelegant99/portfolio",
+    "environment": "development",
+    "publish_policy": "human-approval"
+  },
+  "ownership": {
+    "code": "github",
+    "editorial_desired_state": "notion",
+    "deployment_observed_state": "cloudflare"
+  },
+  "reconciliation": {
+    "mode": "desired-vs-observed",
+    "conflict_policy": "do-not-overwrite-newer-remote-state",
+    "production_deploy_requires_human_gate": true
+  },
+  "notes": [
+    "This branch is a non-production Website OS adapter proof.",
+    "The existing repository currently uses React/react-scripts rather than Astro.",
+    "No Cloudflare deployment is asserted by this file."
+  ]
+}
